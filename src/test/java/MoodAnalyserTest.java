@@ -8,6 +8,6 @@ public class MoodAnalyserTest {
         MoodAnalyser moodAnalyser = new MoodAnalyser();
         String mood = moodAnalyser.analyseMood("This is a Sad message");
 
-        Assert.assertTrue(mood, CoreMatchers.is("SAD" ));
+        Assert.assertThat(mood, CoreMatchers.is("SAD" ));
     }
 }
